@@ -1,12 +1,20 @@
 <html>
 <title>Crouton Boo</title>
 <body bgcolor="white" text="black">
-<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAfCAYAAABplKSyAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGYktHRAD/AP8A/6C9p5MAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjYtMTEtMTZUMTA6NTE6MjYrMDA6MDA6sDGGAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI2LTExLTE2VDEwOjUxOjE3KzAwOjAwYxWFbQAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyNi0xMS0xNlQxMTowMDozMyswMDowMMFpmSUAAAmcSURBVFjDZVc5cwNxGEcZiZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZAAAAAAAAAAAAAAP/wDu3dCAAA">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<img src="croutonboo.png" alt="Crouton" style="width: 33px; height: 31px; cursor: pointer;" id="crouton">
+
+<script>
 document.getElementById('crouton').addEventListener('click', function() {
-    const rand = Math.floor(Math.random() * 100) + 1;
+    const rand = Math.random();
     console.log('Generated random number:', rand);
-    if (rand === 1) {
-        window.location.href = '/discord';
+    if (rand < 1/20) {
+        window.location.href = 'https://www.youtube.com/watch?v=H4dGpz6cnHo&list=PLVAh-MgDVqvDUEq6qDXqORBioE4Yhol_z';
+        return;
+    }
     const sfxFiles = [
         'sfx/Anvil1.mp3.mpeg',
         'sfx/Anvil2.mp3.mpeg',
