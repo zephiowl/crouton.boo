@@ -8,13 +8,7 @@
 <img src="croutonboo.png" alt="Crouton" style="width: 33px; height: 31px; cursor: pointer;" id="crouton">
 
 <script>
-document.getElementById('crouton').addEventListener('click', async function() {
-    await fetch('https://api.counterapi.dev/v2/zephiras-team-6254/croutonboo/up', {
-        method: 'GET',
-        headers: {
-            'Authorization': 'Bearer ut_g40hJLSl2jrCWmhEDH146rhAg91qjSr7GYBwz0Bw'
-        }
-    }).catch(() => {/* analytics disabled, continue anyway */});
+document.getElementById('crouton').addEventListener('click', function() {
     const actualRand = Math.random();
     const rand = Math.floor(actualRand * 100) + 1; // generates 1-100
     console.log('Generated random number:', rand);
