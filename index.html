@@ -42,6 +42,11 @@ document.getElementById('crouton').addEventListener('click', function() {
                     window.location.href = 'https://crouton.boo/discord';
                     return;
                 }
+                // 10% chance crouton.net (fixed URL, no number suffix)
+                    if (rand >= 15 && rand <= 24) {
+                        window.location.href = 'https://crouton.net/';
+                        return;
+                    }
             const sfxFiles = [
         'sfx/Anvil1.mp3.mpeg',
         'sfx/Anvil2.mp3.mpeg',
