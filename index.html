@@ -43,10 +43,20 @@ document.getElementById('crouton').addEventListener('click', function() {
                     return;
                 }
                 // 10% chance crouton.net (fixed URL, no number suffix)
-                    if (rand >= 15 && rand <= 24) {
-                        window.location.href = 'https://crouton.net/';
-                        return;
-                    }
+                if (rand >= 15 && rand <= 24) {
+                    window.location.href = 'https://crouton.net/';
+                    return;
+                }
+                // 1% chance everybodywiki.com
+                if (rand == 100) {
+                    window.location.href = 'https://en.everybodywiki.com/Crouton.net';
+                    return;
+                }
+            // 5% chance forum superiorservers.co
+            if (rand >= 25 && rand <= 29) {
+                window.location.href = 'https://forum.superiorservers.co/topic/83877-hey-4chan-i-made-a-website/';
+                return;
+            }
             const sfxFiles = [
         'sfx/Anvil1.mp3.mpeg',
         'sfx/Anvil2.mp3.mpeg',
