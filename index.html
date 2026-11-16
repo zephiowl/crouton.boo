@@ -9,10 +9,17 @@
 
 <script>
 document.getElementById('crouton').addEventListener('click', function() {
-    const rand = Math.random();
+    const actualRand = Math.random();
+    const rand = Math.floor(actualRand * 2) + 1; // always 1 or 2
     console.log('Generated random number:', rand);
-    if (rand < 1/20) {
+    // 5% chance YouTube
+    if (actualRand < 1/20) {
         window.location.href = 'https://www.youtube.com/watch?v=H4dGpz6cnHo&list=PLVAh-MgDVqvDUEq6qDXqORBioE4Yhol_z';
+        return;
+    }
+    // 1% chance Discord redirect
+    if (actualRand < 1/20 + 1/100) {
+        window.location.href = 'https://crouton.boo/discord';
         return;
     }
     const sfxFiles = [
